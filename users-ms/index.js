@@ -22,7 +22,7 @@ function createUser(call, callback) {
     USERS.push(user);
 
     console.log('user',user)
-    return callback(null, { success: true, user});
+    return callback(null,  user);
 }
 
 function findUser(call, callback){
@@ -32,10 +32,7 @@ function findUser(call, callback){
         callback(null, { success: false, status:grpcLibrary.status.INVALID_ARGUMENT});
     } else{
         console.log('user',user)
-        callback(null,({
-            success: true,
-            user
-        }))
+        callback(null,user)
     }
 }
 

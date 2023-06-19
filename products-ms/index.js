@@ -23,9 +23,8 @@ function createProduct(call, callback){
     const product = { id: PRODUCTS.length + 1, ...call.request };
     PRODUCTS.push(product);
     
-    console.log('product', product);
 
-    return callback(null, { success: true, product});
+    return callback(null,  product);
 }
 
 function findProduct(call, callback){
@@ -35,7 +34,7 @@ function findProduct(call, callback){
         callback(null, { success: false, status: grpcLibrary.status.INVALID_ARGUMENT });
     } else{
         console.log('product', product);
-        return callback(null, { success: true, product});
+        return callback(null,  product);
     }
 }
 
