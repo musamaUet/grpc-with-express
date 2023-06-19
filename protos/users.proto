@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+service Users {
+    rpc createUser(User) returns (User){}
+    rpc findUser(UserId) returns (User) {}
+}
+
+message UserId {
+    int32 id = 1;
+}
+
+message User {
+    int32 id = 1;
+    string name = 2;
+}
