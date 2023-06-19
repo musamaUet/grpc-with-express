@@ -7,7 +7,7 @@
     "start-users": "nodemon ./users-ms/index.js",
     "start-products": "nodemon ./products-ms/index.js",
     "start": "concurrently 'npm run start-users' 'npm run start-products'",
-    "start:express":"nodemon app.js"
+    "start:express": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,7 @@
   "dependencies": {
     "@grpc/grpc-js": "^1.8.15",
     "@grpc/proto-loader": "^0.7.7",
+    "consul": "^1.2.0",
     "express": "^4.18.2",
     "nodemon": "^2.0.22"
   },
