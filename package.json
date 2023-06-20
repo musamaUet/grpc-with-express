@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-users": "nodemon ./users-ms/index.js",
-    "start-products": "nodemon ./products-ms/index.js",
-    "start": "concurrently 'npm run start-users' 'npm run start-products'",
-    "start:express": "nodemon app.js"
+    "start-users": "node init && nodemon ./users-ms/index.js",
+    "start-products": "node init && nodemon ./products-ms/index.js",
+    "start": "node init && concurrently 'npm run start-users' 'npm run start-products'",
+    "start:express": "node init && nodemon app.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +17,10 @@
     "@grpc/proto-loader": "^0.7.7",
     "consul": "^1.2.0",
     "express": "^4.18.2",
-    "nodemon": "^2.0.22"
+    "google-protobuf": "^3.21.2",
+    "nodemon": "^2.0.22",
+    "protobufjs": "^7.2.3",
+    "protocol-buffers": "^5.0.0"
   },
   "devDependencies": {
     "concurrently": "^8.2.0"

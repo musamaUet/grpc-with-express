@@ -43,7 +43,7 @@ server.addService(usersProto.Users.service, {
     findUser:findUser
 });
 
-server.bindAsync('0.0.0.0:50000',grpcLibrary.ServerCredentials.createInsecure(),()=>{
+server.bindAsync('127.0.0.1:50000',grpcLibrary.ServerCredentials.createInsecure(),()=>{
    console.log('user proto started')
     server.start()
 });
