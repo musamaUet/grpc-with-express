@@ -17,7 +17,10 @@
     "@grpc/proto-loader": "^0.7.7",
     "consul": "^1.2.0",
     "express": "^4.18.2",
-    "nodemon": "^2.0.22"
+    "google-protobuf": "^3.21.2",
+    "nodemon": "^2.0.22",
+    "protobufjs": "^7.2.3",
+    "protocol-buffers": "^5.0.0"
   },
   "devDependencies": {
     "concurrently": "^8.2.0"
